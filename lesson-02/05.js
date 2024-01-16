@@ -2,9 +2,10 @@ let passport = {
     name: "Petr",
     surname: "Petrov",
 };
+let passport2 = {};
+for (let key in passport) {
+    passport2[key] = passport[key];
+}
+passport2.name = "Ivan";
 console.log(passport);
-let passport2 = {
-    name: "Ivan",
-    surname: "Petrov",
-};
 console.log(passport2);
